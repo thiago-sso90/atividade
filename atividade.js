@@ -15,16 +15,16 @@ let valor = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 ];
 let verificaposi = new Array(100)
 
-let menor
+let minimax
 let posicao
 
-menor = valor[0];
+minimax = valor[0];
 
 
 
 for (let i = 0; i < valor.length; i++) {
-    if (valor[i] >= menor) {
-        menor = valor[i]
+    if (valor[i] >= minimax) {
+        minimax = valor[i]
         posicao = [i]
 
     }
@@ -36,5 +36,5 @@ for (let i = 0; i < valor.length; i++) {
 
 
 
-console.log('o minimax da matriz é:', menor);
+console.log('o minimax da matriz é:', minimax);
 console.log('e esta na posição', posicao);
